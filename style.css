@@ -9,14 +9,30 @@
    
 }
 
-NAV {
-    /* position: fixed; */
+nav {
+    position: fixed;
     height: 64px;
     width: 100%;
     background-color:white  ;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav .span3 {
+    display: none;
+font-size: 18px;
+color: #8C8A8C;
+}
+.span3 button {
+    margin-left: 40px;
+    width: 90px;
+    background-color:rgb(24,147,247);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .span1 {
 margin-left: 14%;
@@ -847,6 +863,7 @@ float: left;
 /* mejdj */
 
 @media only screen and (max-width: 1200px) {
+   
     .bit {
 
         background-color: black;
@@ -1109,5 +1126,12 @@ span p {
 @media (max-width:992px) {
     nav .span2 {
 display: none;
+    }
+    nav .span2 .buttom{
+        display: block;
+            }
+    nav .span3 {
+        display: block;
+        margin-right: 20px;
     }
 }
